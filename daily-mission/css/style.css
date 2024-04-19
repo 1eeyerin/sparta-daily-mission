@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.mytitle {
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/bg.png') no-repeat center /cover;
+}
+
+.mytitle>button {
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.mycards {
+    width: 1200px;
+    margin: 30px auto 0;
+}
+
+#popupLayer {
+    display: none;
+}
+
+.layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mypostingbox {
+    width: 700px;
+    margin: 30px auto 0;
+    padding: 20px;
+    box-shadow: 0 0 3px 0 black;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.mybtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mybtn>button {
+    margin-right: 5px;
+}
+.form-label span {
+    color: red;
+}

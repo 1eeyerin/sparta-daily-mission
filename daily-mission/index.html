@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내일 배움 캠프를 시작하며</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="mytitle">
+    <h1>내일 배움 캠프를 시작하며,</h1>
+    <p>현재 서울의 미세먼지 : <span id="msg">나쁨</span></p>
+    <button type="button" class="popupBtn">추억 저장하기</button>
+</div>
+<div id="popupLayer">
+    <div class="layer">
+        <div class="mypostingbox" id="postingbox">
+            <div class="mb-2">
+                <label for="title" class="form-label">오늘의 다짐 한 마디 <span>*</span></label>
+                <input type="text" id="title" class="form-control" aria-describedby="title" required maxlength="30"/>
+            </div>
+            <div class="mb-2">
+                <label for="content" class="form-label">오늘의 학습 목표 <span>*</span></label>
+                <input type="text" id="content" class="form-control" aria-describedby="content" required maxlength="30"/>
+            </div>
+            <div class="mb-4">
+                <label for="formFile" class="form-label">공부한 이미지 <span>*</span></label>
+                <input class="form-control" type="file" id="formFile" required />
+                <div class="form-text">1MB 이하의 파일을 업로드해주세요</div>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="form-label">관리자 비밀번호 <span>*</span></label>
+                <input type="password" id="password" class="form-control" aria-describedby="password" required maxlength="30"/>
+                <div class="form-text">이 홈페이지는 관리자만 작성 가능합니다, 사전 지정된 비밀번호를 입력해주세요</div>
+            </div>
+            <div class="mybtn">
+                <button id="postingbtn" type="button" class="btn btn-primary">기록하기</button>
+                <button type="button" class="popupBtn btn btn-outline-primary">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mycards mt-5 mb-5">
+    <div id="card" class="row row-cols-1 row-cols-md-4 g-4">
+
+    </div>
+</div>
+</body>
+<script src="./js/index.js" type="module"></script>
+</html>
